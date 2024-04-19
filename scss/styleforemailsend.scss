@@ -1,0 +1,106 @@
+/* variables */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+$very-ligth-pink: #C7C7C7;
+$white: #FFFFFF;
+$text-input-field: #F7F7F7;
+$black: #000000;
+$hospital-green: #ACD9B2;
+$dark: #232830;
+$sm-text: 1.4rem;
+$md-text: 1.6rem;
+$lg-text: 1.8rem;
+
+$font: 'Quick sands', sans-serif;
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    padding: 0;
+
+}   
+
+html{
+    font-size: 62.5%;
+    font-family: $font;
+}
+
+.mail{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    place-items: center;
+    place-content: center;
+
+}
+.mail-container{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    justify-items: center;
+}
+
+.logo{
+    width: 150px;
+    margin-bottom: 48px;
+    justify-self: center;
+}
+
+.title{
+    font-size: $lg-text;
+    color:$dark;
+    margin-bottom: 1.2rem;
+    text-align: center;
+}
+
+.subtitle{
+    margin-top: 0;
+    font-size: $md-text;
+    color: $very-ligth-pink;
+    margin-bottom: 2.4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.email-image{
+    width: 150px;
+    height: 150px;
+    background-color: $text-input-field;
+    border-radius: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    img{
+        width: 80px;
+    }
+}
+
+.primary-button{
+    height: 5rem;
+    width: 100%;
+    background-color: $hospital-green;
+    color: $white;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: $md-text;
+    font-weight: bold;
+    
+    padding: 1rem;
+}
+
+.text-resend{
+    color: $very-ligth-pink;
+    font-weight: bold;
+    font-size: $md-text ;
+    a{
+        color: $hospital-green;
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 710px){
+    .logo{
+        display: none;
+    }
+}

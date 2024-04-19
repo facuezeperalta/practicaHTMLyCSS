@@ -11,56 +11,60 @@ html {
   font-family: "Quick sands", sans-serif;
 }
 
-.login {
+.mail {
   width: 100%;
   height: 100vh;
   display: flex;
   place-items: center;
   place-content: center;
 }
-.login .logo {
+
+.mail-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  justify-items: center;
+}
+
+.logo {
   width: 150px;
   margin-bottom: 48px;
   justify-self: center;
 }
-.login .form-container {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  width: 350px;
-}
-.login .title {
+
+.title {
   font-size: 1.8rem;
   color: #232830;
   margin-bottom: 1.2rem;
   text-align: center;
 }
-.login .subtitle {
+
+.subtitle {
   margin-top: 0;
   font-size: 1.6rem;
   color: #C7C7C7;
   margin-bottom: 2.4rem;
   text-align: center;
+  margin-bottom: 2rem;
 }
-.login form {
-  display: flex;
-  flex-direction: column;
-}
-.login form label {
-  font-size: 1.6rem;
-  color: #232830;
-  margin-bottom: 1rem;
-  margin-top: 2rem;
-}
-.login form input {
-  height: 3rem;
-  border-radius: 2rem;
-  padding: 2rem;
+
+.email-image {
+  width: 150px;
+  height: 150px;
   background-color: #F7F7F7;
-  border: none;
-  margin-bottom: 1rem;
+  border-radius: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
-.login .primary-button {
+.email-image img {
+  width: 80px;
+}
+
+.primary-button {
   height: 5rem;
+  width: 100%;
   background-color: #ACD9B2;
   color: #FFFFFF;
   border-radius: 1rem;
@@ -68,19 +72,21 @@ html {
   cursor: pointer;
   font-size: 1.6rem;
   font-weight: bold;
-}
-.login .primary-button:hover {
-  background-color: #C7C7C7;
-  color: #000000;
-}
-.login .login-button {
-  margin-top: 1.4rem;
-  margin-bottom: 3rem;
   padding: 1rem;
+}
+
+.text-resend {
+  color: #C7C7C7;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+.text-resend a {
+  color: #ACD9B2;
+  text-decoration: none;
 }
 
 @media (min-width: 710px) {
   .logo {
     display: none;
   }
-}/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styleforemailsend.css.map */
