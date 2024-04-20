@@ -1,0 +1,90 @@
+/* variables */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+$very-ligth-pink: #C7C7C7;
+$white: #FFFFFF;
+$text-input-field: #F7F7F7;
+$black: #000000;
+$hospital-green: #ACD9B2;
+$dark: #232830;
+$sm-text: 1.4rem;
+$md-text: 1.6rem;
+$lg-text: 1.8rem;
+
+$font: 'Quick sands', sans-serif;
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    padding: 0;
+}   
+
+html{
+    font-size: 62.5%;
+    font-family: $font;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    place-items: center;
+    place-content: center;
+}
+
+.main-container{
+    width: 450px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
+}
+
+.title{
+    color: $black;
+    margin-bottom: 3rem;
+
+}
+
+.account-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.innerform{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form-label{
+    color: $black;
+    font-size: $md-text;
+    font-weight: lighter;
+}
+
+.form-input{
+    border: none;
+    margin-bottom: 2rem;
+    height: 3rem;
+    font-size: $md-text;
+}
+
+.secondary-button{
+    height: 5rem;
+    background-color: $white;
+    border: solid 1px $hospital-green;
+    border-radius: 1rem;
+    color: $hospital-green;
+    font-size: $md-text;
+    cursor: pointer;
+
+}
+
+@media (max-width:640px){
+    .main-container{
+        height: 100%;
+    }
+    form{
+        height: 100%;
+        justify-content: space-between;
+    }
+}
