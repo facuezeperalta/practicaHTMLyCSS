@@ -1,0 +1,83 @@
+/* variables */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+$very-ligth-pink: #C7C7C7;
+$white: #FFFFFF;
+$text-input-field: #F7F7F7;
+$black: #000000;
+$hospital-green: #ACD9B2;
+$dark: #232830;
+$sm-text: 1.4rem;
+$md-text: 1.6rem;
+$lg-text: 1.8rem;
+
+$font: 'Quick sands', sans-serif;
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family: $font;
+}
+
+.edit-account{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    place-items: center;
+    place-content: center;
+}
+
+.form-container{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 400px;
+}
+
+.title{
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    font-family: $font;
+    text-align: start;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.form-label{
+    color: $black;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+    font-size: $md-text;
+}
+
+.form-text{
+    color: $very-ligth-pink;
+    font-size: $md-text;
+    margin: 1.2rem 0 3rem;
+
+}
+
+.secondary-button{
+    height: 5rem;
+    background-color: $white;
+    border: solid 1px $hospital-green;
+    border-radius: 1rem;
+    color: $hospital-green;
+    font-size: $md-text;
+    cursor: pointer;
+
+}
+
+@media (max-width:640px){
+    .form-container{
+        height: 100%;
+    }
+    .form{
+        height: 100%;
+        justify-content: space-between;
+    }
+}
